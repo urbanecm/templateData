@@ -1,0 +1,1 @@
+SELECT CONCAT('Šablona:', page_title), page_len, page_is_redirect FROM page_props JOIN page ON page_id = pp_page WHERE pp_propname = 'templatedata' AND page_namespace = 10 AND page_title NOT LIKE '%/doc' ORDER BY page_title;
